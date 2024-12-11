@@ -10,6 +10,8 @@ To obtain a spectra of the cluster after filtration (note: at z=0) print `model 
 2) desired radius in units of projected R_500 (second parameter; possible values are {0.25, 0.5, 0.75, 1.0, 1.25, 1.5}),
 3) normalization (third parameter).
 
+Note that a total normalisation of 1 corresponds to the case where the cluster is located at a distance of 100 Mpc.
+
 Please ignore the default values. There is no fool-proof protection from entering the wrong parameters.
 
 This atable model was made with the help of xspec-table-models script (https://github.com/mbursa/xspec-table-models).

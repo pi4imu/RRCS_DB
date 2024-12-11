@@ -1,6 +1,6 @@
 model atable{RRCS_DB.fits}
 # number of cluster
-19787
+8930
 # radius in units of R500
 1.0
 # normalization
@@ -30,3 +30,5 @@ fit 100
 cpd /xw
 setpl ene
 pl da mo
+sho da
+show rates
