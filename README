@@ -1,16 +1,18 @@
-This is Radially-Resolved Clusters' Spectra Database (RRCS_DB) for 84 galaxy clusters with M_500 > 1e14 M_sun/h from Magneticum simulations.
+This is Radially-Resolved Clusters' Spectra Database (RRCS_DB) for 84 galaxy clusters with M_500 > 1e14 M_sun/h from Box2/hr of Magneticum simulations.
 
 See *papername* for details.
 
-There are two figures named 'panels_unfiltered.png' and 'panels_filtered.png' which include images of all 84 clusters. Every image title contains cluster's number, redshift, area (A). Filtered images' headers contain the percentage of remaining photons (RP) as well. In each image there is a circle with the radius equal to projected R_500 for this cluster with its center located at centroid of the image; there is also point indicating position of gravitational potential minimum from Magneticum catalogue.
+There are two figures named 'panels_unfiltered.png' and 'panels_filtered.png' which include images of all 84 clusters. Every image title contains cluster's number, redshift and area (A). Filtered images' headers contain the percentage of remaining photons (RP) as well. In each image there is a circle with the radius equal to projected R_500 for this cluster with its center located at centroid of the image; there is also point indicating position of gravitational potential minimum from Magneticum catalogue. The length of the white line at the top of the panel indicates the scale (in physical units).
 
 To obtain a spectra of the cluster after filtration (note: at z=0) print `model atable{RRCS_DB.fits}` in xspec and write:
 
 1) the number of the cluster (first parameter), 
-2) desired radius in units of projected R_500 (second parameter; possible values are {0.25, 0.5, 0.75, 1.0, 1.25, 1.5}),
+2) radius in units of projected R_500 (second parameter; possible values are {0.25, 0.5, 0.75, 1.0, 1.25, 1.5}),
 3) normalization (third parameter).
 
-Note that a total normalisation of 1 corresponds to the case where the cluster is located at a distance of 100 Mpc.
+You can also produce an unfiltered spectrum, use `model atable{RRCS_DB_unfiltered.fits}` for this.
+
+Note that a total normalisation of 1 corresponds to the case where the cluster is located at a distance of 100 Mpc. 
 
 Please ignore the default values. There is no fool-proof protection from entering the wrong parameters.
 
